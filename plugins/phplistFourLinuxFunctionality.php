@@ -9,17 +9,17 @@ use phplist\Caixa\Functionality\Interfaces\Models\MessageTab;
 use phplist\Caixa\Functionality\Interfaces\Shared\View;
 
 /**
- * Class phplistCaixaFunctionality
+ * Class phplistFourLinuxFunctionality
  */
-class phplistCaixaFunctionality extends phplistPlugin
+class phplistFourLinuxFunctionality extends phplistPlugin
 {
-    public $name = 'Caixa Functionality';
-    public $description = 'Biblioteca de funcionalidades do phplistCaixa';
+    public $name = 'FourLinux Functionality';
+    public $description = 'Biblioteca de funcionalidades do phplistFourLinux';
     public $version = '0.1.0';
 
     public $pageTitles = array(
-        'site' => 'phpList da Caixa',
-        'about' => 'Sobre o phpList da Caixa',
+        'site' => 'phpList da 4Linux',
+        'about' => 'Sobre o phpList da 4Linux',
     );
 
     public $topMenuLinks = array(
@@ -27,18 +27,18 @@ class phplistCaixaFunctionality extends phplistPlugin
     );
 
     /**
-     * phplistCaixaFunctionality constructor.
+     * phplistFourLinuxFunctionality constructor.
      */
     function __construct()
     {
-        $this->coderoot = dirname(__FILE__) . '/phplistCaixaFunctionality/';
+        $this->coderoot = dirname(__FILE__) . '/phplistFourLinuxFunctionality/';
         parent::__construct();
     }
 
     public function activate()
     {
         global $plugins;
-        require_once $plugins['phplistCaixaFunctionality']->coderoot . 'includes/src/autoload.php';
+        require_once $plugins['phplistFourLinuxFunctionality']->coderoot . 'includes/src/autoload.php';
 
         parent::activate();
     }
