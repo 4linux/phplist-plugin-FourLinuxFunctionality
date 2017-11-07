@@ -71,7 +71,7 @@ class phplistFourLinuxFunctionality extends phplistPlugin
 
     public function sendMessageTabTitle($messageId = 0)
     {
-        return 'Caixa';
+        return '4Linux';
     }
 
     public function messageQueued($messageId)
