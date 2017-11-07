@@ -2,11 +2,11 @@
 
 defined('PHPLISTINIT') || die;
 
-use phplist\Caixa\Functionality\Domain\Shared\AbstractServiceFactory;
-use phplist\Caixa\Functionality\Domain\MessageDataService;
-use phplist\Caixa\Functionality\Domain\UserMessageService;
-use phplist\Caixa\Functionality\Interfaces\Models\MessageTab;
-use phplist\Caixa\Functionality\Interfaces\Shared\View;
+use phplist\FourLinux\Functionality\Domain\Shared\AbstractServiceFactory;
+use phplist\FourLinux\Functionality\Domain\MessageDataService;
+use phplist\FourLinux\Functionality\Domain\UserMessageService;
+use phplist\FourLinux\Functionality\Interfaces\Models\MessageTab;
+use phplist\FourLinux\Functionality\Interfaces\Shared\View;
 
 /**
  * Class phplistFourLinuxFunctionality

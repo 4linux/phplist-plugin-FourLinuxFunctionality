@@ -1,13 +1,13 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Interfaces\Controllers\Site;
+namespace phplist\FourLinux\Functionality\Interfaces\Controllers\Site;
 
-use phplist\Caixa\Functionality\Interfaces\Shared\AbstractController;
+use phplist\FourLinux\Functionality\Interfaces\Shared\AbstractController;
 
 /**
  * Class IndexController
  *
- * @package phplist\Caixa\Functionality\Interfaces\Controllers\Site
+ * @package phplist\FourLinux\Functionality\Interfaces\Controllers\Site
  */
 class IndexController extends AbstractController
 {

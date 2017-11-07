@@ -1,11 +1,11 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Domain\Model\Caixa;
+namespace phplist\FourLinux\Functionality\Domain\Model\Caixa;
 
 /**
  * Class Client
  *
- * @package phplist\Caixa\Functionality\Domain\Model\Caixa
+ * @package phplist\FourLinux\Functionality\Domain\Model\Caixa
  */
 class Client
 {

@@ -1,5 +1,5 @@
 <?php
-/** @var \phplist\Caixa\Functionality\Interfaces\Shared\MessageTab $messageTab */
+/** @var \phplist\FourLinux\Functionality\Interfaces\Shared\MessageTab $messageTab */
 ?>
 
 <input type="hidden" name="caixaTabSubmitted" value="yes">

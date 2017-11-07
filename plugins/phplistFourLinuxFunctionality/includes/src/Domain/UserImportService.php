@@ -6,11 +6,11 @@
  * Time: 14:42
  */
 
-namespace phplist\Caixa\Functionality\Domain;
+namespace phplist\FourLinux\Functionality\Domain;
 
 
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\CaixaDAO;
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\PHPListDAO;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\CaixaDAO;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\PHPListDAO;
 
 class UserImportService
 {

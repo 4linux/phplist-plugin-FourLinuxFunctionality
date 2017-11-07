@@ -1,6 +1,6 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Infrastructure\Shared;
+namespace phplist\FourLinux\Functionality\Infrastructure\Shared;
 
 class PHPList
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Domain;
+namespace phplist\FourLinux\Functionality\Domain;
 
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\PHPListDAO;
-use phplist\Caixa\Functionality\Infrastructure\Shared\PHPList;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\PHPListDAO;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\PHPList;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class UserMessageServiceTest
  *
- * @package phplist\Caixa\Functionality\Domain
+ * @package phplist\FourLinux\Functionality\Domain
  */
 class UserMessageServiceTest extends TestCase
 {

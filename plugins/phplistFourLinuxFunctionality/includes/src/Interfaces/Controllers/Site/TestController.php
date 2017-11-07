@@ -1,24 +1,24 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Interfaces\Controllers\Site;
+namespace phplist\FourLinux\Functionality\Interfaces\Controllers\Site;
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-use phplist\Caixa\Functionality\Domain\Shared\AbstractServiceFactory;
-use phplist\Caixa\Functionality\Domain\UserImportService;
-use phplist\Caixa\Functionality\Infrastructure\DB\Connection;
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\CaixaDAO;
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\PHPListDAO;
-use phplist\Caixa\Functionality\Infrastructure\Shared\AbstractDAOFactory;
-use phplist\Caixa\Functionality\Interfaces\Shared\AbstractController;
+use phplist\FourLinux\Functionality\Domain\Shared\AbstractServiceFactory;
+use phplist\FourLinux\Functionality\Domain\UserImportService;
+use phplist\FourLinux\Functionality\Infrastructure\DB\Connection;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\CaixaDAO;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\PHPListDAO;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\AbstractDAOFactory;
+use phplist\FourLinux\Functionality\Interfaces\Shared\AbstractController;
 
 
 /**
  * Class TestController
  *
- * @package phplist\Caixa\Functionality\Interfaces\Controllers\Site
+ * @package phplist\FourLinux\Functionality\Interfaces\Controllers\Site
  */
 class TestController extends AbstractController
 {

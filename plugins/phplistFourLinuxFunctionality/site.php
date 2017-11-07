@@ -2,9 +2,9 @@
 
 defined('PHPLISTINIT') || die;
 
-use phplist\Caixa\Functionality\Interfaces\Shared\Route;
-use phplist\Caixa\Functionality\Interfaces\Controllers\Site\IndexController;
-use phplist\Caixa\Functionality\Interfaces\Controllers\Site\TestController;
+use phplist\FourLinux\Functionality\Interfaces\Shared\Route;
+use phplist\FourLinux\Functionality\Interfaces\Controllers\Site\IndexController;
+use phplist\FourLinux\Functionality\Interfaces\Controllers\Site\TestController;
 
 $routes = [];
 $routes['index'] = new IndexController();

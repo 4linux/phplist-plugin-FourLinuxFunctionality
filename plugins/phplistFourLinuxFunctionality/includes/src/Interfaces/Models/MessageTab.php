@@ -1,11 +1,11 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Interfaces\Models;
+namespace phplist\FourLinux\Functionality\Interfaces\Models;
 
 /**
  * Class MessageTab
  *
- * @package phplist\Caixa\Functionality\Interfaces\Models
+ * @package phplist\FourLinux\Functionality\Interfaces\Models
  */
 class MessageTab
 {

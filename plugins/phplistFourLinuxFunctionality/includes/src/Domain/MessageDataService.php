@@ -1,13 +1,13 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Domain;
+namespace phplist\FourLinux\Functionality\Domain;
 
-use phplist\Caixa\Functionality\Infrastructure\Shared\PHPList;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\PHPList;
 
 /**
  * Class MessageDataService
  *
- * @package phplist\Caixa\Functionality\Domain
+ * @package phplist\FourLinux\Functionality\Domain
  */
 class MessageDataService
 {

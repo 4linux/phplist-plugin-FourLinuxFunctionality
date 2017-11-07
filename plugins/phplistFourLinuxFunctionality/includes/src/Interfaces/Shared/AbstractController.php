@@ -1,11 +1,11 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Interfaces\Shared;
+namespace phplist\FourLinux\Functionality\Interfaces\Shared;
 
 /**
  * Class AbstractController
  *
- * @package phplist\Caixa\Functionality\Interfaces\Shared
+ * @package phplist\FourLinux\Functionality\Interfaces\Shared
  */
 abstract class AbstractController
 {

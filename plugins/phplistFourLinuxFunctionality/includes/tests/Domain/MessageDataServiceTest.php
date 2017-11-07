@@ -1,14 +1,14 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Domain;
+namespace phplist\FourLinux\Functionality\Domain;
 
-use phplist\Caixa\Functionality\Infrastructure\Shared\PHPList;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\PHPList;
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class MessageDataServiceTest
  *
- * @package phplist\Caixa\Functionality\Domain
+ * @package phplist\FourLinux\Functionality\Domain
  */
 class MessageDataServiceTest extends TestCase
 {

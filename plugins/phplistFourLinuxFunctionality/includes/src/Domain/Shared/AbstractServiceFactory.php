@@ -1,19 +1,19 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Domain\Shared;
+namespace phplist\FourLinux\Functionality\Domain\Shared;
 
-use phplist\Caixa\Functionality\Domain\MessageDataService;
-use phplist\Caixa\Functionality\Domain\UserImportService;
-use phplist\Caixa\Functionality\Domain\UserMessageService;
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\CaixaDAO;
-use phplist\Caixa\Functionality\Infrastructure\DB\DAO\PHPListDAO;
-use phplist\Caixa\Functionality\Infrastructure\Shared\AbstractDAOFactory;
-use phplist\Caixa\Functionality\Infrastructure\Shared\PHPList;
+use phplist\FourLinux\Functionality\Domain\MessageDataService;
+use phplist\FourLinux\Functionality\Domain\UserImportService;
+use phplist\FourLinux\Functionality\Domain\UserMessageService;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\CaixaDAO;
+use phplist\FourLinux\Functionality\Infrastructure\DB\DAO\PHPListDAO;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\AbstractDAOFactory;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\PHPList;
 
 /**
  * Class AbstractServiceFactory
  *
- * @package phplist\Caixa\Functionality\Domain\Shared
+ * @package phplist\FourLinux\Functionality\Domain\Shared
  */
 abstract class AbstractServiceFactory
 {

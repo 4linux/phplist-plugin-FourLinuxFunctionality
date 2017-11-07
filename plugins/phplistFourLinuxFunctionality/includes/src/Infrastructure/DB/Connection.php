@@ -1,11 +1,11 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Infrastructure\DB;
+namespace phplist\FourLinux\Functionality\Infrastructure\DB;
 
 /**
  * Class Connection
  *
- * @package phplist\Caixa\Functionality\Infrastructure\DB
+ * @package phplist\FourLinux\Functionality\Infrastructure\DB
  */
 class Connection
 {

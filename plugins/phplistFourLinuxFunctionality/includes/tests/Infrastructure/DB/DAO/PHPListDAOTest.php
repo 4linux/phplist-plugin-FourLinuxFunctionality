@@ -1,15 +1,15 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Infrastructure\DB\DAO;
+namespace phplist\FourLinux\Functionality\Infrastructure\DB\DAO;
 
-use phplist\Caixa\Functionality\Infrastructure\DB\Connection;
+use phplist\FourLinux\Functionality\Infrastructure\DB\Connection;
 
 use PHPUnit\Framework\TestCase;
 
 /**
  * Class PHPListDAOTest
  *
- * @package phplist\Caixa\Functionality\Infrastructure\DB\DAO
+ * @package phplist\FourLinux\Functionality\Infrastructure\DB\DAO
  */
 class PHPListDAOTest extends TestCase
 {

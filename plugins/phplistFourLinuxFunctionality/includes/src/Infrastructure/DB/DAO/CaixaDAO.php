@@ -1,13 +1,13 @@
 <?php
 
-namespace phplist\Caixa\Functionality\Infrastructure\DB\DAO;
+namespace phplist\FourLinux\Functionality\Infrastructure\DB\DAO;
 
-use phplist\Caixa\Functionality\Infrastructure\Shared\AbstractDAO;
+use phplist\FourLinux\Functionality\Infrastructure\Shared\AbstractDAO;
 
 /**
  * Class CaixaDAO
  *
- * @package phplist\Caixa\Functionality\Infrastructure\DB\DAO
+ * @package phplist\FourLinux\Functionality\Infrastructure\DB\DAO
  */
 class CaixaDAO extends AbstractDAO
 {
