@@ -1,0 +1,10 @@
+# Base
+.idea
+.DS_Store
+
+# Provisioning
+.vagrant
+playbook.retry
+
+# Composer
+vendor
