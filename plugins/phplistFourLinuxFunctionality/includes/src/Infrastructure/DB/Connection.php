@@ -57,26 +57,4 @@ class Connection
         }
         return $connection;
     }
-
-    /**
-     * Get the current connection for external PostgreSQL/Caixa database.
-     *
-     * @return Connection
-     */
-    public static function fromCaixa()
-    {
-        static $connection;
-
-
-        if (!isset($connection)) {
-            $dbname = $GLOBALS['database_pgsql_caixa_name'];
-            $host = $GLOBALS['database_pgsql_caixa_host'];
-            $username = $GLOBALS['database_pgsql_caixa_user'];
-            $passwd = $GLOBALS['database_pgsql_caixa_password'];
-
-            $connection = new Connection("pgsql:host={$host};dbname={$dbname}", $username, $passwd);
-        }
-
-        return $connection;
-    }
 }

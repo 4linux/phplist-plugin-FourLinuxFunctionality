@@ -19,9 +19,6 @@ abstract class AbstractDAOFactory
 
         if (!isset($factories)) {
             $factories = [
-                CaixaDAO::class => function () {
-                    return new CaixaDAO(Connection::fromCaixa());
-                },
                 PHPListDAO::class => function () {
                     return new PHPListDAO(Connection::fromPHPList());
                 },

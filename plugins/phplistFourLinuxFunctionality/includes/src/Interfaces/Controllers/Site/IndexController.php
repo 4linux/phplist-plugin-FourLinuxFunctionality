@@ -13,6 +13,13 @@ class IndexController extends AbstractController
 {
     public function __invoke()
     {
-        echo $this->render('site/index');
+        /** @var \phplistFourLinuxFunctionality $plugin */
+        $plugin = $GLOBALS['plugins'][$_GET['pi']];
+
+        echo $this->render('site/index', [
+            'pluginName' => $plugin->name(),
+            'pluginDescription' => $plugin->description,
+            'pluginVersion' => $plugin->getVersion(),
+        ]);
     }
 }
