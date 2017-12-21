@@ -28,8 +28,12 @@ class phplistFourLinuxFunctionality extends phplistPlugin
     public $topMenuLinks = array(
         'site' => array(
             'category' => 'system'
+        ),
+        'noviewstatistics' => array(
+            'category' => 'statistics'
         )
-    );
+    )
+    ;
 
     /**
      * phplistFourLinuxFunctionality constructor.
