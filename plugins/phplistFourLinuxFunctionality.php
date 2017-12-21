@@ -1,6 +1,5 @@
 <?php
-
-defined('PHPLISTINIT') || die;
+defined('PHPLISTINIT') || die();
 
 use phplist\FourLinux\Functionality\Domain\Shared\AbstractServiceFactory;
 use phplist\FourLinux\Functionality\Domain\MessageDataService;
@@ -13,17 +12,23 @@ use phplist\FourLinux\Functionality\Interfaces\Shared\View;
  */
 class phplistFourLinuxFunctionality extends phplistPlugin
 {
+
     public $name = 'FourLinux Functionality';
+
     public $description = 'Biblioteca de funcionalidades do phplistFourLinux';
+
     public $version = '0.1.0';
 
     public $pageTitles = array(
         'site' => 'phpList da 4Linux',
         'about' => 'Sobre o phpList da 4Linux',
+        'noviewstatistics' => 'Estatisticas dos e-mails não vistos'
     );
 
     public $topMenuLinks = array(
-        'site' => array('category' => 'system'),
+        'site' => array(
+            'category' => 'system'
+        )
     );
 
     /**
@@ -39,7 +44,7 @@ class phplistFourLinuxFunctionality extends phplistPlugin
     {
         global $plugins;
         require_once $plugins['phplistFourLinuxFunctionality']->coderoot . 'includes/src/autoload.php';
-
+        
         parent::activate();
     }
 
@@ -51,21 +56,20 @@ class phplistFourLinuxFunctionality extends phplistPlugin
     public function sendMessageTab($messageId = 0, $messageData = array())
     {
         if (MessageTab::isSubmitted($_POST)) {
-
+            
             $messageTab = MessageTab::fromPost($_POST);
-
+            
             /** @var MessageDataService $messageDataService */
             $messageDataService = AbstractServiceFactory::get(MessageDataService::class);
             $messageDataService->setAlwaysSendToNotViewed($messageId, $messageTab->alwaysSendToNotViewed);
-
         } else {
             $messageTab = MessageTab::fromMessage($messageData);
         }
-
+        
         $view = new View('sendMessage/tab', [
-            'messageTab' => $messageTab,
+            'messageTab' => $messageTab
         ]);
-
+        
         return $view->render();
     }
 
