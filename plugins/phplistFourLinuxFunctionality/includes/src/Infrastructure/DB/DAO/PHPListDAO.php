@@ -33,7 +33,7 @@ SQL;
         $sql = <<<SQL
 SELECT * FROM
   {$this->getTables()['message']}
-        WHERE sent IS NOT NULL
+        WHERE sent IS NOT NULL ORDER BY id DESC
 SQL;
         $connectionPDO = $this->connection->getPDO();
         $data = $connectionPDO->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
