@@ -28,7 +28,7 @@ SQL;
         ]);
     }
 
-    public function listMessages()
+    public function listMessages($start, $offset = 10)
     {
         $sql = <<<SQL
 SELECT  
@@ -44,9 +44,8 @@ ON m.id = um.messageid
         WHERE sent IS NOT NULL
             AND um.viewed is null
         ORDER BY id DESC
+LIMIT $offset OFFSET $start 
 SQL;
-
-       // echo $sql; exit();
 
         $connectionPDO = $this->connection->getPDO();
         $data = $connectionPDO->query($sql)->fetchAll(\PDO::FETCH_ASSOC);

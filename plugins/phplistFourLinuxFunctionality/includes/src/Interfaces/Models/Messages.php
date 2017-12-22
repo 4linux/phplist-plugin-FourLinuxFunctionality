@@ -17,8 +17,8 @@ class Messages
         $this->phplistDao = AbstractDAOFactory::get(PHPListDAO::class);
     }
     
-    public function listAllMessages()
+    public function listAllMessages($start)
     {
-        return $this->phplistDao->listMessages();
+        return $this->phplistDao->listMessages($start);
     }
 }

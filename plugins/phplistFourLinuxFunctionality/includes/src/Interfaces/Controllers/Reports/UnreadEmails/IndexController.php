@@ -21,12 +21,15 @@ class IndexController extends AbstractController
 
     public function __invoke()
     {
+        $start = isset($_GET['start']) ? $_GET['start'] : 0;
+           
         $plugin = $GLOBALS['plugins'][$_GET['pi']];
         
-        $unseenemails = $this->reportUnread->listAllMessages();
+        $unseenemails = $this->reportUnread->listAllMessages($start);
         
         echo $this->render('reports/noviewstatistics/index', [
-            'unseenemails' => $unseenemails
+            'unseenemails' => $unseenemails,
+            'start' => $start
         ]);
     }
 }
