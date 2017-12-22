@@ -1,5 +1,4 @@
 <?php
-
 namespace phplist\FourLinux\Functionality\Infrastructure\DB;
 
 /**
@@ -9,8 +8,11 @@ namespace phplist\FourLinux\Functionality\Infrastructure\DB;
  */
 class Connection
 {
+
     private $dsn;
+
     private $username;
+
     private $passwd;
 
     private $pdo = null;
@@ -18,9 +20,12 @@ class Connection
     /**
      * Connection constructor.
      *
-     * @param $dsn
-     * @param $username
-     * @param $passwd
+     * @param
+     *            $dsn
+     * @param
+     *            $username
+     * @param
+     *            $passwd
      */
     private function __construct($dsn, $username, $passwd)
     {
@@ -32,10 +37,12 @@ class Connection
     public function getPDO()
     {
         if (is_null($this->pdo)) {
-            $this->pdo = new \PDO($this->dsn, $this->username, $this->passwd);
+            $this->pdo = new \PDO($this->dsn, $this->username, $this->passwd, array(
+                \PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
+            ));
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
-
+        
         return $this->pdo;
     }
 
@@ -47,8 +54,8 @@ class Connection
     public static function fromPHPList()
     {
         static $connection;
-
-        if (!isset($connection)) {
+        
+        if (! isset($connection)) {
             $dbname = $GLOBALS['database_name'];
             $host = $GLOBALS['database_host'];
             $username = $GLOBALS['database_user'];
