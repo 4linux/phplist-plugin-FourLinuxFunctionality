@@ -32,7 +32,8 @@ class phplistFourLinuxFunctionality extends phplistPlugin
         'noviewstatistics' => array(
             'category' => 'statistics'
         )
-    );
+
+    ); 
 
     /**
      * phplistFourLinuxFunctionality constructor.

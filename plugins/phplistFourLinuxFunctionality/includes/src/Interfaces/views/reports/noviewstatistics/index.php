@@ -23,16 +23,16 @@ if (isset($_GET["start"])) {
 if (!$total) {
     $myTable->addElement('<strong>Relatório</strong>', ''); //
 } else {
+   
     for ($i = 0; $i < $numberPerPage; $i++) { // Create a table of proper length for the page.
         $current = $start + $i;
         if($current >= $total){
             $start = $current - $numberPerPage;
             $current = $start;
         }
-        
+       
         $message = $unseenemails[$current];
-//         echo '<pre>';
-//         print_r($message);
+ 
         $id = $message['id'];
         $myTable->addElement($message['id'], '', 'ID');
                             //$name, $column_name, $value, $url = '', $align = ''
@@ -43,7 +43,7 @@ if (!$total) {
      
     }
     
-    $paging=simplePaging("emailsnaovistos", $start, $total, $numberPerPage,'campanhas');
+    $paging=simplePaging("noviewstatistics", $start, $total, $numberPerPage,'campanhas');
     $myTable->usePanel($paging);  // Pass the paging to the $myTable object
 }
 

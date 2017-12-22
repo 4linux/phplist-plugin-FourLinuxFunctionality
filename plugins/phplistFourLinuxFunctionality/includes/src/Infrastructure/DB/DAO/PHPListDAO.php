@@ -31,10 +31,23 @@ SQL;
     public function listMessages()
     {
         $sql = <<<SQL
-SELECT * FROM
-  {$this->getTables()['message']}
+SELECT  
+    distinct(m.id), 
+    m.sent, 
+    m.entered, 
+    m.status,
+    m.subject
+FROM
+  {$this->getTables()['message']} AS m
+INNER JOIN {$this->getTables()['usermessage']} AS um
+ON m.id = um.messageid
         WHERE sent IS NOT NULL
+            AND um.viewed is null
+        ORDER BY id DESC
 SQL;
+
+       // echo $sql; exit();
+
         $connectionPDO = $this->connection->getPDO();
         $data = $connectionPDO->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
         return $data;
