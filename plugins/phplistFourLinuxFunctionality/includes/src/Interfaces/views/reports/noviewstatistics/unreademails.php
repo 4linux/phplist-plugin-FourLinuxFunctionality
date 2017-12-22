@@ -46,7 +46,7 @@ if (! $total) {
 
     }
     
-    $paging=simplePaging("emailsnaovistos", $start, $total, $numberPerPage, 'usuários');
+    $paging=simplePaging("noviewstatistics", $start, $total, $numberPerPage, 'usuários');
     $myTable->usePanel($paging);  // Pass the paging to the $myTable object
 }
 
